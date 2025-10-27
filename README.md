@@ -1,8 +1,6 @@
 # Learning ESI
 
-This repository provides an end-to-end library for automatic character rigging, skinning, and blend shapes generation, as well as a visualization tool. It is based on our work [Learning Skeletal Articulations with Neural Blend Shapes]hat is published in SIGGRAPH 2021.
-
-
+This repository provides an end-to-end library for automatic character rigging, skinning, and blend shapes generation, as well as a visualization tool. 
 
 ## Prerequisites
 
