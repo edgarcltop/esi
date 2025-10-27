@@ -26,25 +26,3 @@ We provide a pretrained model that is dedicated for biped characters.
 ~~~bash
 python demo.py --pose_file=./eval_constant/sequences/greeting.npy --obj_path=./eval_constant/meshes/maynard.obj
 ~~~
-
-## Train from Scratch
-
-We provide instructions for retraining our model.
-
-Note that you may need to reinstall the PyTorch CUDA version since the provided environment only includes the PyTorch CPU version.
-
-To train the model from scratch, you need to get the training set.
-
-The training process contains tow stages, each stage corresponding to one branch. To train the first stage, please run
-
-~~~bash
-python train.py --envelope=1 --save_path=[path to save the model] --device=[cpu/cuda:0/cuda:1/...]
-~~~
-
-For the second stage, it is strongly recommended to use a pre-process to extract the blend shapes basis then start the training for much better efficiency by
-
-~~~bash
-python preprocess_bs.py --save_path=[same path as the first stage] --device=[computing device]
-python train.py --residual=1 --save_path=[same path as the first stage] --device=[computing device] --lr=1e-4
-~~~
-
