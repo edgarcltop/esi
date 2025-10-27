@@ -22,8 +22,7 @@ Note the provided environment only includes the PyTorch CPU version for compatib
 
 ## Quick Start
 
-We provide a pretrained model that is dedicated for biped characters. Download and extract the pretrained model from [Google Drive](https://drive.google.com/file/d/1S_JQY2N4qx1V6micWiIiNkHercs557rG/view?usp=sharing) 
-
+We provide a pretrained model that is dedicated for biped characters.
 ~~~bash
 python demo.py --pose_file=./eval_constant/sequences/greeting.npy --obj_path=./eval_constant/meshes/maynard.obj
 ~~~
